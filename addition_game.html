@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset = "utf-8">
-    <title></title>
+    <title>Addition Game</title>
     <script>
          function runTest(input){
          if(isNaN(input)){
@@ -15,7 +15,7 @@
          }
          else{
          document.getElementById("messageDisplay").style = "color:red";
-         document.getElementById("messageDisplay").innerHTML = "Inorrect!";
+         document.getElementById("messageDisplay").innerHTML = "Incorrect!";
          }
          }
 
@@ -29,10 +29,10 @@
          document.getElementById("answerInput").value="";
          }
       </script>
-    <head>
+</head>
 <body onload="generateNewTest();">
 <p id="problemDisplay"></p>
-<input id="answerInput"></input>
+<input id="answerInput"/>
 <button onclick="runTest(document.getElementById('answerInput').value);" id="submitButton">Submit answer</button>
 <button onclick="generateNewTest();">generate new problem</button>
 <br><br>
