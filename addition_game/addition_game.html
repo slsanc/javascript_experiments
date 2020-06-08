@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset = "utf-8">
+    <title>Addition Game</title>
+    <script src="addition_game_scripts.js"></script>
+</head>
+<body onload="generateNewTest();">
+<p id="problemDisplay"></p>
+<input type = text id="answerInput"/>
+<button onclick="runTest(document.getElementById('answerInput').value);" id="submitButton">Submit answer</button>
+<button onclick="generateNewTest();">generate new problem</button>
+<br/><br/>
+<p id="messageDisplay" style="color:red"></p>
+</body>
+</html>

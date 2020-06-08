@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>List Maker</title>
+    <style>
+        body {font-family : sans-serif;}
+        button {background-color:lightblue ; border:none; padding:5px;}
+        div {margin:auto}
+    </style>
+    <script src="list_maker_scripts.js">
+    </script>
+</head>
+<body onload="initialMessage();">
+
+<div id="pageContents" style="visibility:hidden">
+    <input type="text" id="textInput"/>
+    <button onclick="addItem(document.getElementById('textInput').value);">Add Item</button>
+    <button onclick="clearData();">Clear All Data</button>
+    <br/>
+    <table id="listDisplay">
+    </table>
+
+</div>
+
+</body>
+</html>
