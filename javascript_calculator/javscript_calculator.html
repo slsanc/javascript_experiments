@@ -6,24 +6,43 @@
     <script src="javascript_calculator_scripts.js"></script>
     <style>
         button {padding-top: 5px;
-                padding-left: 10px;
+                padding-left: 15px;
                 padding-bottom: 5px;
-                padding-right: 10px;}
-        body {font-family: sans-serif;}
+                padding-right: 15px;
+                outline:none;
+                border:none;
+                font-family: monospace;
+                font-size: 30px;
+                width: 100%
+                }
+        body {font-family: monospace;
+                font-size: 30px;}
         td {padding: 2px;}
+        table  {background-color: #467AA5;
+                text-align: right;
+                padding: 1%;}
+
 
     </style>
 </head>
 <body onload="clearCalculator();">
-<table style="background-color:gray;">
+<table>
     <tr>
-        <td id="numberDisplay" style="background-color:	#98FB98; text-align:right;" colspan="4">0</td>
+        <td colspan="4">
+            <div id="numberDisplay" style="background-color:#CDF25C; text-align:right;" colspan="4">0</div>
+        </td>
     </tr>
 
     <tr>
-        <td></td>
-        <td></td>
         <td colspan="2">
+            <table style="padding:1%; color:#4d0600;">
+                <td  style="background-color:#4d0600; width:100%; height:100%">|</td>
+                <td  style="background-color:#4d0600; width:100%; height:100%">|</td>
+                <td  style="background-color:#4d0600; width:100%; height:100%">|</td>
+                <td  style="background-color:#4d0600; width:100%; height:100%">|</td>
+            </table>
+        </td>
+        <td colspan="2" style="text-align:right;">
             <button onclick="clearCalculator()">CLEAR</button>
         </td>
     </tr>
@@ -38,7 +57,7 @@
             <button onclick="pushNumber(9)">9</button>
         </td>
         <td>
-            <button onclick="pushOperator('/')">/</button>
+            <button onclick="pushOperator('/')" style="background-color:#FF7061;">/</button>
         </td>
     </tr>
 
@@ -53,7 +72,7 @@
             <button onclick="pushNumber(6)">6</button>
         </td>
         <td>
-            <button onclick="pushOperator('*')">*</button>
+            <button onclick="pushOperator('*')" style="background-color:#FF7061;">*</button>
         </td>
     </tr>
     <tr>
@@ -67,7 +86,7 @@
             <button onclick="pushNumber(3)">3</button>
         </td>
         <td>
-            <button onclick="pushOperator('-')">-</button>
+            <button onclick="pushOperator('-')" style="background-color:#FF7061;">-</button>
         </td>
     </tr>
     <tr>
@@ -78,10 +97,10 @@
             <button onclick="pushDecimal()">.</button>
         </td>
         <td>
-            <button onclick="pushEquals()">=</button>
+            <button onclick="pushOperator('=')" style="background-color:#FF7061; color:black;">=</button>
         </td>
         <td>
-            <button onclick="pushOperator('+')">+</button>
+            <button onclick="pushOperator('+')" style="background-color:#FF7061;">+</button>
         </td>
     </tr>
 
